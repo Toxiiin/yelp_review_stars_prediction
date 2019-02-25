@@ -12,6 +12,6 @@ This repository contains an implementation for a review (text) to stars mapping 
 To start the training of network, log into your preferred docker container and run ```train.py```. The script takes several arguments to control the training process and the data extraction. To get an overview, type ```train.py -h``` for a help message.
 
 After training there are three files generated as output:
-1) The network model file as \*.h5-file
+1) The network model as \*.h5-file
 2) A training log
 3) A raw data file from pickle, which contains the word mappings from text tokenizer

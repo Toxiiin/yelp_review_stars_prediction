@@ -22,6 +22,8 @@ After training there are three files generated as output:
 
 Start a docker container (like you did to start a training). Start the prediction with the execution of ```predict.py```. The scripts takes three parameters, type ```predict.py -h``` to get more information.
 
+To enter new texts you can define strings direcly in the script with assigning them to variable ```input_texts```.
+
 # Backup: Anaconda
 
 If the docker container wont work you could take a look at the conda_environments folder. The folder contains \*.yml files to generate conda environments. To generate an environment, install a valid anaconda version (see https://www.anaconda.com/) and type ```conda env create -f environment.yml``` to set the environment up (more information @ https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html).

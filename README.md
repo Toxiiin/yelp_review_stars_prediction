@@ -1,4 +1,4 @@
-# Rating prediction via review scan for yelp database
+# Rating prediction via review text scan for yelp database
 This repository contains an implementation for a review (text) to stars mapping prediction in keras.
 
 # 1) Installation

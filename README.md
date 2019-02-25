@@ -3,9 +3,10 @@ This repository contains an implementation for a review (text) to stars mapping 
 
 # Installation
 
-1) Install docker from https://docs.docker.com/
-2) Install container for cpu build via: ```docker build -t keras_cpu --build-arg python_version=3.6 --build-arg cuda_version=9.0 --build-arg cudnn_version=7 -f Dockerfile_cpu .``` or for gpu build via ```docker build -t keras_gpu --build-arg python_version=3.6 --build-arg cuda_version=9.0 --build-arg cudnn_version=7 -f Dockerfile_gpu .```
-3) Start docker container, for cpu version type: ```docker run -it -v <path_to_project_folder>:/home -v <path_to_yelp_database>:/data --env KERAS_BACKEND=tensorflow keras_cpu bash``` and for gpu version: ```nvidia-docker run -it -v <path_to_project_folder>:/home -v <path_to_yelp_database>:/data --env KERAS_BACKEND=tensorflow keras_gpu bash```. Attention: For GPU Version, please install NVIDIA drivers (ideally latest) and nvidia-docker from https://github.com/NVIDIA/nvidia-docker.
+1) Install docker from https://docs.docker.com/.
+2) Open command line window and navigate to the project folder with all files from this repository.
+3) Install container for cpu build via: ```docker build -t keras_cpu --build-arg python_version=3.6 --build-arg cuda_version=9.0 --build-arg cudnn_version=7 -f Dockerfile_cpu .``` or for gpu build via ```docker build -t keras_gpu --build-arg python_version=3.6 --build-arg cuda_version=9.0 --build-arg cudnn_version=7 -f Dockerfile_gpu .```.
+4) Start docker container, for cpu version type: ```docker run -it -v <path_to_project_folder>:/home -v <path_to_yelp_database>:/data --env KERAS_BACKEND=tensorflow keras_cpu bash``` and for gpu version: ```nvidia-docker run -it -v <path_to_project_folder>:/home -v <path_to_yelp_database>:/data --env KERAS_BACKEND=tensorflow keras_gpu bash```. Attention: For GPU Version, please install NVIDIA drivers (ideally latest) and nvidia-docker from https://github.com/NVIDIA/nvidia-docker.
 
 # Start Training
 

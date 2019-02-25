@@ -281,7 +281,7 @@ print('Save checkpoint ...')
 with open("keras_tokenizer_" + act_time + '_' + str(param_dict['job_id']) + ".pickle", "wb") as f:
     pickle.dump(tokenizer, f)
 model.save("yelp_sentiment_model_" + act_time + '_' + str(param_dict['job_id']) + ".hdf5")
-print('Sucessfully seved!\n')
+print('Sucessfully saved!\n')
 
 stop = timeit.default_timer()
 print('Runtime: {:.3f}'.format(stop - start) + 's')
